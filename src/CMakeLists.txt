@@ -1,6 +1,6 @@
-include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/include")
+include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/../include")
 
-set(GENERATOR_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/generator")
+set(GENERATOR_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/generator")
 
 set(GENERATOR_HEADERS
 	${GENERATOR_INCLUDE_DIR}/AnyGenerator.hpp
