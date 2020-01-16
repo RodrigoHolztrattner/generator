@@ -14,7 +14,7 @@ GridShape::GridShape(
 				segments[0] * subSegments[0]
 			},
 			segments[1] < 1 ? 0 : segments[1] + 1,
-			gml::dvec2{0.0, 2.0 * size[1] / std::max(segments[1], 1)}
+			gml::dvec2{0.0, 2.0 * size[1] / glm::max(segments[1], 1)}
 		},
 		// Vertical lines
 		RepeatShape<LineShape>{
@@ -23,7 +23,7 @@ GridShape::GridShape(
 				segments[1] * subSegments[1]
 			},
 			segments[0] < 1 ? 0 : segments[0] + 1,
-			gml::dvec2{2.0 * size[0] / std::max(segments[0], 1), 0.0}
+			gml::dvec2{2.0 * size[0] / glm::max(segments[0], 1), 0.0}
 		},
 	}
 {
